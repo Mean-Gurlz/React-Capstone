@@ -1,5 +1,12 @@
 import { useEffect,useState } from "react";
+import { NavLink } from "react-router-dom";
+import Home from "../pages/home";
+import { createContext } from "react";
+
+export const data= createContext("")
+
 export default function back(){
+
     const[display,setDisplay]=useState([])
 
     const fetchData=async()=>{
@@ -29,7 +36,7 @@ export default function back(){
   
     return (
       <>
-      <div className="grid grid-cols-3 gap-3 ml-7">
+      <div className="grid grid-cols-3 gap-3 ml-7 bg-cover bg-center">
       {
         display.map((dis)=>{
           return(
@@ -37,11 +44,18 @@ export default function back(){
           <img  className="rounded-t-lg" src={dis.gifUrl} alt="" />
           <div className="text-2xl mb-2 ml-3 font-bold">{'Name: '+dis.name}</div>
           <div className="text-2xl mb-2 ml-3 text-gray-700 dark:text-gray-400 ">{'Target: '+dis.target}</div>
-          <div className="text-2xl ml-3 text-gray-700 dark:text-gray-400 ">{'Equiment: '+dis.equipment}</div>
+          <div className="text-2xl mb-2 ml-3 text-gray-700 dark:text-gray-400 ">{'Equiment: '+dis.equipment}</div>
+          <NavLink  className="text-2xl ml-3 text-gray-700 dark:text-gray-400 " to={`/Back/${dis.id}`}>View More...</NavLink>
+        
         </div>
           )
         })
+        
       }
+      <data.Provider value={{display}}>
+        <Home/>
+      </data.Provider>
+     
       </div>
       </>
     )
