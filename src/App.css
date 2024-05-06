@@ -10,3 +10,56 @@
 body{
   background-color:#11202A
 }
+.blue-button {
+  margin-top: 5px;
+  background-color: #3498db; /* Blue color */
+  color: white; /* Text color */
+  padding: 8px 15px; /* Padding */
+  font-size: 12px; /* Font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.blue-button:hover {
+  background-color: #2980b9; /* Darker blue color on hover */
+}
+
+.cardContainer{
+  width: 100%;
+  margin-top: 120px;
+  /* margin-left: 250px; */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,33.33%);
+  grid-gap:20px 5px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* h2 {
+  font-size: 30px;
+  color: #fff9f9;
+  margin-bottom: 10px;
+  font-weight: bold;
+} */
+
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}

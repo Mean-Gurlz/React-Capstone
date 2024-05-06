@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react";
 import { NavLink } from "react-router-dom";
-import Home from "../pages/Home";
+import Dynamic from "../pages/Dynamic";
 import { createContext } from "react";
 
 export const data = createContext("")
@@ -54,7 +54,7 @@ export default function Back(){
         
       }
       <data.Provider value={{display}}>
-        <Home/>
+        <Dynamic/>
       </data.Provider>
      
       </div>
