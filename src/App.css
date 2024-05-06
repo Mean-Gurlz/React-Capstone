@@ -8,10 +8,10 @@
   border-radius:10px;
 }
 body{
-  background-color:#11202A
+  background-color:#11202A;
 }
 .blue-button {
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: #3498db; /* Blue color */
   color: white; /* Text color */
   padding: 8px 15px; /* Padding */
@@ -50,13 +50,6 @@ img {
   border-radius: 8px;
   margin-bottom: 10px;
 }
-
-/* h2 {
-  font-size: 30px;
-  color: #fff9f9;
-  margin-bottom: 10px;
-  font-weight: bold;
-} */
 
 p {
   font-size: 16px;

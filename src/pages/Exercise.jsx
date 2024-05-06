@@ -6,38 +6,38 @@ function Exercise() {
     const cards = [
         {
             Id: 1,
-            image: 'chest.avif',
+            image: 'chesterfield.jpg',
             Name:"Chest Work-Outs",
             size: "Focus is on the chest",
-            path: "/Something"
+            path: "/Chest"
         },
         {
             Id: 2,
-            image: 'backrr.jpg',
+            image: 'bask-removebg-preview.png',
             Name:"Back Work-Outs",
-            size:"Get an Awesome",
-            path: "/Something"
+            size:"Make your Back do the Work",
+            path: "/Back"
         },
         {
             Id: 3,
             image: 'armss.avif',
             Name: "Arm Work-Outs",
-            size: "Masive Biceps and Triceps",
-            path: "/Something"
+            size: "Develop Well-defined arm muscles",
+            path: "/Arms"
         },
         {
             Id: 4,
-            image: 'lrgss.png',
+            image: 'legger.png',
             Name: "Leg Work-Outs",
-            size: "Comes with massive GYAAAAATTT",
-            path: "/Something"
+            size: "Never Skip Leg-Day",
+            path: "/Legs"
         },
         {
             Id:5,
-            image: 'shouldertypee.jpg',
-            Name:"Shoulder-Work-Outs",
-            size:"Big ahhh Shoulders",
-            path: "/Something"
+            image: 'shuld.jpg',
+            Name:"Shoulder Work-Outs",
+            size:"Boulder-Shoulders",
+            path: "/Shoulder"
         }
        ]
     
@@ -48,9 +48,9 @@ function Exercise() {
                     cards.map((card) => {
                         return(
                             <div className="card" key={card.Id}>
-                                <img className=' bg-white' src={card.image} alt="" />
-                                <div className=' font-3xl text-white'>{card.Name}</div>
-                                <p>{card.size}</p>
+                                <img className=' h-64' src={card.image} alt="" />
+                                <div className=' text-2xl font-bold text-white'>{card.Name}</div>
+                                <p className='mt-2'>{card.size}</p>
                                 <p>{card.price}</p>
                                 <button className="blue-button"><NavLink to={card.path}>VIEW INFO</NavLink></button>
                            </div>

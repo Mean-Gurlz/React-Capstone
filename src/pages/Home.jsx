@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Firebase from './Firebase'
 
 function Home() {
   return (
@@ -13,7 +15,7 @@ function Home() {
          <p className="text-white ">Push Harder Than Yesterday...</p>
       </div>
       <div className="ml-96 pl-10 pt-10">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Sign-Up</button>
+      <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><NavLink to='/Firebase'>Sign Up</NavLink></button>
       </div>
     </div>
     </>
