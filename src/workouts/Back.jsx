@@ -1,11 +1,12 @@
 import { useEffect,useState } from "react";
 import { NavLink } from "react-router-dom";
-import Home from "../pages/home";
+import Home from "../pages/Home";
 import { createContext } from "react";
 
-export const data= createContext("")
+export const data = createContext("")
 
-export default function back(){
+
+export default function Back(){
 
     const[display,setDisplay]=useState([])
 

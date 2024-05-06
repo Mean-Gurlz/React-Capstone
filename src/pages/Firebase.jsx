@@ -1,6 +1,6 @@
 import { useState } from "react"
 import{createUserWithEmailAndPassword} from 'firebase/auth'
-import{auth} from './f-config'
+import{auth} from './F-config'
 
 export default  function Firebase(){
     const[email,setEmail] = useState("")

@@ -1,10 +1,12 @@
-import { useEffect,useState } from "react";
-export default function tricep() {
+import { useEffect, useState } from "react";
+
+
+export default function Chest(){
     const[display,setDisplay]=useState([])
 
     const fetchData=async()=>{
   
-    const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/upper%20arms?limit=12';
+    const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/chest?limit=12';
     const options = {
       method: 'GET',
       headers: {
@@ -29,7 +31,7 @@ export default function tricep() {
   
     return (
       <>
-      <div className="grid grid-cols-3 gap-3 ml-7">
+     <div className="grid grid-cols-3 gap-3 ml-7">
       {
         display.map((dis)=>{
           return(
@@ -42,7 +44,7 @@ export default function tricep() {
           )
         })
       }
-      </div>  
+      </div>
       </>
     )
 }

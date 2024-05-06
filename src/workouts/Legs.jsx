@@ -1,10 +1,12 @@
-import { useEffect,useState } from "react";
-export default function bicep(){
+import { useEffect, useState } from "react";
+
+
+export default function Legs(){
     const[display,setDisplay]=useState([])
 
     const fetchData=async()=>{
   
-    const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/shoulders?limit=12';
+    const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/upper%20legs?limit=12';
     const options = {
       method: 'GET',
       headers: {
@@ -29,12 +31,12 @@ export default function bicep(){
   
     return (
       <>
-     <div className="grid grid-cols-3 gap-3 ml-7">
+      <div className="grid grid-cols-3 gap-3 ml-7">
       {
         display.map((dis)=>{
           return(
         <div className="output shadow dark:bg-gray-800 dark:border-gray-700" key={dis.id}>
-          <img  className="rounded-t-lg" src={dis.gifUrl} alt="" />
+          <img className="rounded-t-lg" src={dis.gifUrl} alt="" />
           <div className="text-2xl mb-2 ml-3 font-bold">{'Name: '+dis.name}</div>
           <div className="text-2xl mb-2 ml-3 text-gray-700 dark:text-gray-400 ">{'Target: '+dis.target}</div>
           <div className="text-2xl ml-3 text-gray-700 dark:text-gray-400 ">{'Equiment: '+dis.equipment}</div>
@@ -43,6 +45,7 @@ export default function bicep(){
         })
       }
       </div>
+        
       </>
     )
 }

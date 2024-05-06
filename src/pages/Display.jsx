@@ -1,4 +1,4 @@
-export default function display(){
+export default function Display(){
      return(
         <>
         <div>

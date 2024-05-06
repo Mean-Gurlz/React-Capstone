@@ -1,5 +1,5 @@
 import { NavLink,Link, Outlet} from "react-router-dom"
-export default function nav(){
+export default function Nav(){
     return(
         <>
         <NavLink to='/' className='text-3xl text-white'>Home</NavLink>

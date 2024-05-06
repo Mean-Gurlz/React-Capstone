@@ -1,6 +1,6 @@
 import {  useParams } from "react-router-dom"
 import { useContext } from "react"
-import { data } from "../workouts/back"
+import { data } from "../workouts/Back"
    
 export default function Home(){
     const{id}=useParams()
